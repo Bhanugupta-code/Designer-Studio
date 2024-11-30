@@ -1,0 +1,238 @@
+*{
+  scroll-behavior: smooth;
+}
+body {
+  color: goldenrod !important;
+ 
+}
+
+#video {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.showstyleText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.fontStyle {
+  font-family: 'CENTAUR', sans-serif, cursive;
+  text-align: center;
+  font-weight: 500;
+  font-size: calc(2vw + 15px);
+  padding: 10px 5px;
+}
+
+.fontStyleSpecial {
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  font-weight: 500;
+  font-size: calc(3vw + 25px);
+  padding: 10px 5px;
+}
+
+.button {
+  padding: 5px 15px;
+  background-color: goldenrod;
+  color: white;
+  font-size: larger;
+  border-radius: 15px;
+  width: fit-content !important;
+  border: none;
+  text-transform: capitalize;
+}
+
+button:hover {
+  background-color: rgb(75, 14, 71);
+  transition: 0.7s ease;
+  cursor: pointer;
+}
+
+.fonttext {
+  color: grey;
+  font-family: sans-serif, cursive;
+  font-size: large;
+  padding-bottom: 20px;
+}
+
+.small_icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.small_log {
+  width: 30%;
+}
+
+.section {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2em;
+  font-family: Arial, sans-serif;
+  transition: background 0.5s ease-in-out;
+}
+
+.section.bg1 {
+  background: url('https://mulberryprefab.com/wp-content/uploads/2024/02/2-1.webp') center/cover no-repeat fixed;
+}
+
+.section.bg2 {
+  height: 80vh;
+  background-image: url('https://mulberryprefab.com/wp-content/uploads/2024/04/Home-image-962X814.webp'), url('https://mulberryprefab.com/wp-content/uploads/2024/04/Pod-image-962X814.webp');
+  background-size: 50% 100%, 50% 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, right;
+}
+
+.section.bg3 {
+  background: url('https://mulberryprefab.com/wp-content/uploads/2024/02/hdr-2-of-4.webp') center/cover no-repeat fixed;
+}
+
+.section.bg4 {
+  background: url('https://mulberryprefab.com/wp-content/uploads/2024/04/Balinese-Series-1920X848.webp') center/cover no-repeat fixed;
+}
+
+.section.bg5 {
+  background: url('https://mulberryprefab.com/wp-content/uploads/2024/04/Hawaiian-Series-1920X848.webp') center/cover no-repeat fixed;
+}
+
+.section.bg6 {
+  background: url('https://mulberryprefab.com/wp-content/uploads/2024/04/Spanish-Series-1920X848.webp') center/cover no-repeat fixed;
+}
+
+.divTwo {
+  display: flex;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.footer{
+  background: url(https://mulberryprefab.com/wp-content/uploads/2024/04/Last-page_01.webp);
+  width: 100vw;
+  height: fit-content;
+}
+span{
+  text-transform: uppercase;
+  font-size: large!important;
+  width: 230px;
+  word-spacing: 2px;
+}
+.footer_img{
+  height: 60vh;
+  width: 100%;
+  margin-top: -10vh;
+  mix-blend-mode: multiply;
+}
+.footer1{
+  background-color: rgb(75, 14, 71);
+}
+.width{
+  width: 30%;
+}
+.width1{
+  width: 40%;
+}
+.width2{
+  width: 30%;
+}
+.width1 span, .width2 span, .width span{
+  width: fit-content;
+}
+.ds_img{
+  position: relative;
+  overflow: hidden;
+  width: 30%!important;
+  height: 20vw!important;
+  border-radius: 5px;
+}
+.img{
+  width: 100%;
+  height: 100%;
+}
+.title{
+  position: absolute;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 100%;
+  font-family: CENTAUR,sans-serif;
+  opacity: 0;
+  bottom: -45px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.img_hover{
+  cursor: pointer;
+  border-radius: 2px;
+  transition: transform 1s ease;
+  transform: scale(1);
+}
+.a_img{
+  height: 100%!important;
+  width: 100%!important;
+}
+.a_img:hover + .title{
+  bottom: 0;
+  opacity: 1;
+}
+.a_img:hover .img_hover{
+  transition: transform 1.5s ease;
+  transform: scale(1.5);
+}
+span a{
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width : 992px) {
+.width,.width1,.width2{
+  width: fit-content;
+}
+.ds_img{
+  width: 48%!important;
+  height: 35vw!important;
+}
+.small_log{
+  width: 50%;
+}
+}
+
+@media (max-width : 768px) {
+  .ds_img{
+    width: 100%!important;
+    height: 50vw!important;
+  }
+  
+.fontStyle {
+  font-size: 4vw;
+}
+
+.fontStyleSpecial {
+  font-size: calc(6vw + 15px);
+}
+.section.bg2 {
+  height: 70vh;
+}
+.small_log{
+  width: 100%;
+}
+}

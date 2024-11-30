@@ -1,0 +1,140 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Container */
+.contain {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: block;
+    background-color: rgb(75, 14, 71);
+    font-family: sans-serif, cursive;
+}
+
+.container_inside {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: goldenrod;
+    padding: 2vh 1vw;
+}
+
+/* Logo */
+.logo {
+    width: 150px;
+}
+
+.img_logo {
+    width: 100%;
+    height: auto;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: goldenrod;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+/* Navbar Items */
+.navbar-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.3s ease;
+    /* margin-right: 3%; */
+    margin: auto;
+}
+
+.navbar_list {
+    list-style: none;
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 0;
+}
+
+.navbar_list li {
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    width: 10vw;
+    text-align: center;
+}
+
+.navbar_list li a {
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.navbar_list li a:hover {
+    color: white;
+}
+
+/* Animation for active class */
+.navbar_list .active {
+    opacity: 0;
+    animation: fadeIn 1s forwards infinite;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.contain{
+    position: initial;
+}
+    .navbar-items {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(75, 14, 71);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-items.d-flex {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar_list {
+        flex-direction: column;
+        gap: 15px;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar_list li{
+        width: 80%;
+    }
+}
